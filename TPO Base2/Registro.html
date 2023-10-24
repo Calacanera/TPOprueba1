@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Estilo2.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registro de Usuario</title>
+</head>
+<body>
+
+  <div class="navbar">
+    <nav>
+      <button class="menu-vh" onclick="toggleMenu()">Menu</button>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Preguntas.html">Preguntas sobre BA</a></li>
+        <li><a href="#">Temas</a></li>
+        <li><a href="#">Destacados BA</a></li>
+        <li><a href="#">Guias Locales</a></li>
+        <li><a href="Registro.html">Registro</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+    <div class="container">
+        <h2>Formulario de Registro de Usuario</h2>
+    <form action="">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre">
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email">
+
+      <label for="contrasena">Contraseña:</label><br>
+      <input type="password" id="contrasena" name="contrasena"><br>
+
+      <label for="pais">País:</label>
+      <select id="pais" name="pais">
+        <option value="seleccionar">Seleccionar</option>
+        <option value="usa">Estados Unidos</option>
+        <option value="mexico">México</option>
+        <option value="espana">España</option>
+      </select>
+
+      <input type="submit" onclick="return enviarFormulario();" value="Registrarse">
+    </form>
+
+    <div id='error'></div>
+
+    </div>
+
+<script src="js.js"></script>
+</body>
+</html>
